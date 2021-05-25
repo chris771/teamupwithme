@@ -1,0 +1,87 @@
+<!-- NOTE -->
+<!-- The contents of this coding file reference the W3Schools tutorial webpage for developing a login page -->
+<!-- See  https://www.w3schools.com/howto/howto_css_login_form.asp -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- Add CSS elements -->
+<style>
+  /* Set styles for the body, form, and heading tags */
+  body {font-family: Arial, Helvetica, sans-serif;}
+  form {border: 3px solid #f1f1f1;}
+  h1 {text-align: center;}
+  h2 {text-align: center;}
+
+  /* Create an input function and set style parameters */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  /* Create a button funtion and set style parameters */
+  button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  /* Alter the opacity of the button when the cursor hovers over it */
+  button:hover {
+    opacity: 0.8;
+  }
+
+  /* Create a function for an image container and set style elements */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+
+  /* Create a general content container and set style elements */
+  .container {
+    margin: auto;
+    width: 45%;
+    padding: 16px;
+  }
+</style>
+</head>
+
+<body>
+  <form action="login-successful.html" method="post">
+    <!-- Inset an image with the set container properties -->
+    <div class="imgcontainer">
+      <img src="logo.png" height="200" width="250">
+    </div>
+
+    <!-- Create text headings to display -->
+    <h1> Team Up With Me </h1>
+    <h2> Login </h2>
+
+    <div class="container">
+      <!-- Create username entry section -->
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <!-- Create password enty section -->
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+            
+      <!-- Create button to submit login details -->
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+  </form>
+</body>
+</html>
